@@ -2,7 +2,7 @@ import React from 'react';
 import css from 'components/FeedbackOptions/FeedBackOptions.module.css';
 import PropTypes from 'prop-types';
 
-export const FeedbackOptions = ({ onLeaveFeedback }) => {
+export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <div className={css.buttonDiv}>
       <button
@@ -26,4 +26,5 @@ export const FeedbackOptions = ({ onLeaveFeedback }) => {
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.object.isRequired,
 };
